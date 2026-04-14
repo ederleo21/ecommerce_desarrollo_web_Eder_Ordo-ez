@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Pago | Aura Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AURA<span>STORE</span></a>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="checkout-container">
+            <div class="checkout-form-side">
+                <h1 class="section-title" style="text-align: left;">Información de Pago</h1>
+                
+                <form id="payment-form" class="glass-form">
+                    <div class="form-group">
+                        <label for="card-name">Nombre en la tarjeta</label>
+                        <input type="text" id="card-name" placeholder="JUAN PEREZ" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="card-number">Número de tarjeta</label>
+                        <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card-exp">Fecha de vencimiento</label>
+                            <input type="text" id="card-exp" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block" id="pay-btn">Pagar Ahora</button>
+                    <div id="payment-status" class="status-msg"></div>
+                </form>
+            </div>
+
+            <aside class="order-summary-side">
+                <div class="summary-card">
+                    <h3>Tu Pedido</h3>
+                    <div id="checkout-summary-items">
+                        <!-- Items cargados dinámicamente -->
+                    </div>
+                    <hr>
+                    <div class="summary-line total">
+                        <span>Total a pagar</span>
+                        <span id="checkout-total">$0.00</span>
+                    </div>
+                    <div class="secure-badge">
+                        <span>🔒 Pago 100% Seguro</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aura Store. Simulación de Pasarela Segura.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/checkout.js" type="module"></script>
+</body>
+</html>

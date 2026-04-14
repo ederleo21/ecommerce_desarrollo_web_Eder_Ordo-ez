@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito | Aura Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AURA<span>STORE</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Tienda</a></li>
+                    <li><a href="carrito.html" class="cart-link active">
+                        Carrito <span id="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1 class="page-title">Tu Carrito</h1>
+        
+        <div class="cart-layout">
+            <section id="cart-items" class="cart-items">
+                <!-- Los items del carrito se cargarán aquí -->
+                <div class="loading">Cargando carrito...</div>
+            </section>
+
+            <aside id="cart-summary" class="cart-summary">
+                <div class="summary-card">
+                    <h3>Resumen del Pedido</h3>
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Envío</span>
+                        <span>Gratis</span>
+                    </div>
+                    <hr>
+                    <div class="summary-line total">
+                        <span>Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    <button class="btn-primary btn-block" id="checkout-btn">Finalizar Compra</button>
+                    <a href="index.html" class="btn-secondary btn-block">Seguir Comprando</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aura Store. Diseñado con estilo.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/carrito.js" type="module"></script>
+</body>
+</html>

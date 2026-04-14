@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Aura Headphones Pro",
+        "price": 299.99,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+        "description": "Sonido envolvente de alta fidelidad con cancelación de ruido activa. Diseñados para la comodidad extrema."
+    },
+    {
+        "id": 2,
+        "name": "Minimal Keyboard XL",
+        "price": 159.99,
+        "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80",
+        "description": "Teclado mecánico ultra delgado con retroiluminación ambiental. Escritura precisa y elegante."
+    },
+    {
+        "id": 3,
+        "name": "Smart Watch Elite",
+        "price": 199.50,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+        "description": "Monitorea tu salud y recibe notificaciones con estilo. Resistente al agua y batería de larga duración."
+    },
+    {
+        "id": 4,
+        "name": "MagSafe Mouse",
+        "price": 89.00,
+        "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+        "description": "Diseño ergonómico y carga rápida. El compañero perfecto para tu setup minimalista."
+    }
+]
